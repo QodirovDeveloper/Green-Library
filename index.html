@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -19,6 +20,9 @@
     tailwind.config = {
       theme: {
         extend: {
+          boxShadow: {
+            custom: '10px 10px rgba(0, 0, 0, 0.1)', // Custom box-shadow
+          },
           fontFamily: {
             poppins: ["Poppins", "sans-serif"],
           },
@@ -44,7 +48,7 @@
       </a>
       <ul class="max-lg:hidden flex items-center gap-6 sm:gap-10 font-medium">
         <li><a href="/index.html" class="t_hov p-1">HOME</a></li>
-        <li><a href="/" class="t_hov p-1">IT</a></li>
+        <li><a href="/it.html" class="t_hov p-1">IT</a></li>
         <li><a href="/" class="t_hov p-1">BUSINESS</a></li>
         <li><a href="/" class="t_hov p-1">TURIZIM</a></li>
       </ul>
@@ -62,7 +66,7 @@
 
     <ul class="lg:hidden flex items-center gap-6 sm:gap-10  font-medium mt-2 text-[17px] sm:text-2xl">
       <li><a href="/index.html" class="t_hov p-1">HOME</a></li>
-      <li><a href="/" class="t_hov p-1">IT</a></li>
+      <li><a href="/it.html" class="t_hov p-1">IT</a></li>
       <li><a href="/" class="t_hov p-1">BUSINESS</a></li>
       <li><a href="/" class="t_hov p-1">TURIZIM</a></li>
     </ul>
@@ -83,17 +87,122 @@
     </div>
     <div class="flex justify-center items-center flex-wrap">
       <img class="2xl:h-[270px] xl:h-[220px] lg:h-[170px] md:h-[135px] sm:h-[110px]" src="/images/girl.webp" alt="">
-      <img class="2xl:h-[270px] xl:h-[220px] lg:h-[170px] md:h-[135px] sm:h-[110px]" src="/images/library-bg.jpg" alt="">
-      <img class="2xl:h-[270px] xl:h-[220px] lg:h-[170px] md:h-[135px] sm:h-[110px]" src="/images/img1.jpg" alt="Library">
+      <img class="2xl:h-[270px] xl:h-[220px] lg:h-[170px] md:h-[135px] sm:h-[110px]" src="/images/library-bg.jpg"
+        alt="">
+      <img class="2xl:h-[270px] xl:h-[220px] lg:h-[170px] md:h-[135px] sm:h-[110px]" src="/images/img1.jpg"
+        alt="Library">
     </div>
   </div>
 
-  <div class="container mx-auto lg:pl-14 lg:pr-14 mt-2 sm:pr-6 sm:pl-6 pl-1 pr-1">
+  <div class=" container mx-auto lg:pl-14 lg:pr-14 mt-2 sm:pr-6 sm:pl-6 pl-1 pr-1">
     <div class="">
       <!--! 1  -->
-      <div class="bg-[#F8F8F8] p-5 border border-tgreen rounded-[20px]">
-        <img class="w-[150px]" src="/images/AtomicHabits.jpg" alt="AtomicHabits">
+      <div data-aos="flip-right">
+        <div
+          class="my-3 flex items-center gap-4 sm:gap-10 bg-[#F8F8F8] sm:p-5 sm:border border-tgreen sm:rounded-[20px]">
+          <img class="shadow-custom w-[100px] sm:w-[150px]" src="/images/AtomicHabits.jpg" alt="AtomicHabits">
+          <div class="">
+            <p class="text-tgreen">
+              4.3
+              <span class="ml-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </span>
+            </p>
+            <h2 class="sm:text-4xl text-2xl font-semibold">
+              Atomic Habits
+            </h2>
+            <p class="text-tgreen">Self-help, Psychology, Business</p>
+            <p class="sm:my-2 text-[#5c5c5c]">
+              "Atomic Habits" by James Clear
+              <span class="max-md:hidden">
+                emphasizes the power of small, consistent changes to create lasting habits. It presents a four-step
+                framework: make habits obvious, attractive, easy, and satisfying. The book highlights that focusing on
+                systems, not just goals, leads to personal growth and long-term success. Small improvements compound
+                over
+                time for remarkable results.
+              </span>
+            </p>
+            <p class="max-sm:hidden">
+              Year: 2018
+              <span class="ml-10">Pages: 320 pages</span>
+            </p>
+          </div>
+
+        </div>
       </div>
+
+      <!--! 2  -->
+      <div data-aos="fade-right">
+        <div
+          class="my-3 flex items-center gap-4 sm:gap-10 bg-[#F8F8F8] sm:p-5 sm:border border-tgreen sm:rounded-[20px]">
+          <img class="shadow-custom w-[100px] sm:w-[150px]" src="/images/OtkirHoshimov.png" alt="O'tkirHoshimov">
+          <div class="">
+            <p class="text-tgreen">
+              4.3
+              <span class="ml-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </span>
+            </p>
+            <h2 class="sm:text-4xl text-2xl font-semibold">
+              Oʻtkir Hoshimov
+            </h2>
+            <p class="text-tgreen">Novel, Short story, Drama</p>
+            <p class="sm:my-2 text-[#5c5c5c] max-md:hidden">
+              O'tkir Hoshimov wrote numerous works in various genres, including novels, short stories, and essays. His
+              books have had a profound impact on Uzbek literary culture.
+            </p>
+            <p class="max-sm:hidden">
+              Year: 1939-2020
+              <span class="ml-10">Books : +20</span>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!--! 3  -->
+      <div data-aos="fade-left">
+        <div
+          class="my-3 flex items-center gap-4 sm:gap-10 bg-[#F8F8F8] sm:p-5 sm:border border-tgreen sm:rounded-[20px]">
+          <img class="shadow-custom w-[100px] sm:w-[150px]" src="/images/AbdullaAvloniy.png" alt="AbdullaAvloniy">
+          <div class="">
+            <p class="text-tgreen">
+              4.3
+              <span class="ml-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </span>
+            </p>
+            <h2 class="sm:text-4xl text-2xl font-semibold">
+              Abdulla Avloniy
+            </h2>
+            <p class="text-tgreen">Pedagogy, Journalism, Fiction</p>
+            <p class="sm:my-2 text-[#5c5c5c] max-md:hidden">
+              Abdulla Avloniy — O'zbekistonlik mashhur yozuvchi, pedagog, davlat arbobi va jamoat faolidir. U 20-asrning
+              boshlarida o'zbek adabiyoti va ta'lim tizimini rivojlantirishga katta hissa qo'shgan shaxsdir. Abdulla
+              Avloniy o'zbek milliy ongini shakllantirishda va madaniy yangilanishda muhim rol o'ynagan.
+            </p>
+            <p class="max-sm:hidden">
+              Year: 1878–1951
+              <span class="ml-10">Books: +30</span>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+
     </div>
   </div>
 
@@ -108,6 +217,12 @@
    Atomic Habits
    Oʻtkir Hoshimov
    Abdulla Avloniy -->
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
